@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Gadgets and Widgets";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Gadgets and Widgets</h1>
+</div>
+
+<div>
+    <table class="table">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col" class="text-end">Cost</th>
+        </tr>
+        @foreach (var widget in Model.Widgets)
+        {
+            <tr>
+                <td>@widget.Id</td>
+                <td>@widget.Name</td>
+                <td>@widget.Description</td>
+                <td class="text-end">$@widget.Cost.ToString("N2")</td>
+            </tr>
+        }
+    </table>
+</div>
+<div>
+    <table class="table">
+        <tr>
+            <th scope="col">Key</th>
+            <th scope="col">Gadget Type</th>
+            <th scope="col">Usage Instructions</th>
+        </tr>
+        @foreach (var gadget in Model.Gadgets)
+        {
+            <tr>
+                <td>@gadget.Key</td>
+                <td>@gadget.GadgetType</td>
+                <td>@gadget.UsageInstructions</td>
+            </tr>
+        }
+    </table>
+</div>

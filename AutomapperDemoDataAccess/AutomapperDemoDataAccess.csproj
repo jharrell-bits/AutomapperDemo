@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <OpenApiReference Include="GadgetWebAPI\GadgetWebAPI.json" CodeGenerator="NSwagCSharp" Namespace="AutomapperDemoDataAccess.GadgetWebAPI" ClassName="GadgetWebAPI" >
+		<NSwagGenerateExceptionClasses>true</NSwagGenerateExceptionClasses>
+	</OpenApiReference>
+    <OpenApiReference Include="WidgetWebAPI\WidgetWebAPI.json" CodeGenerator="NSwagCSharp" Namespace="AutomapperDemoDataAccess.WidgetWebAPI" ClassName="WidgetWebAPI" >
+		<NSwagGenerateExceptionClasses>true</NSwagGenerateExceptionClasses>
+	</OpenApiReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="14.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutomapperDemoModels\AutomapperDemoModels.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,70 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "GadgetWebAPI",
+        "version": "1.0"
+    },
+    "paths": {
+        "/Gadget": {
+            "get": {
+                "tags": [
+                    "Gadget"
+                ],
+                "operationId": "GetGadgets",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "text/plain": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Gadget"
+                                    }
+                                }
+                            },
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Gadget"
+                                    }
+                                }
+                            },
+                            "text/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Gadget"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Gadget": {
+                "type": "object",
+                "properties": {
+                    "gadgetKey": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "gadgetType": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "usageInstructions": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    }
+}
