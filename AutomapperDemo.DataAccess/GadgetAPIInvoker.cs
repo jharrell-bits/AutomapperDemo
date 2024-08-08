@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using AutomapperDemoDataAccess.MappingProfiles;
-using AutomapperDemoModels;
+using AutomapperDemo.DataAccess.MappingProfiles;
+using AutomapperDemo.Models;
 
-namespace AutomapperDemoDataAccess
+namespace AutomapperDemo.DataAccess
 {
     public class GadgetAPIInvoker : IGadgetAPIInvoker
     {
@@ -13,16 +13,20 @@ namespace AutomapperDemoDataAccess
         {
             _httpClient = httpClient;
 
+            // set the Automapper configuration profile that should be used for this WebAPI Invoker class
             var config = new MapperConfiguration(cfg => cfg.AddProfile<GadgetAPIMappingProfile>());
             _mapper = new Mapper(config);
         }
 
         public async Task<List<Gadget>> GetGadgets()
         {
+            // create a WebAPI client
             var gadgetAPI = new GadgetWebAPI.GadgetWebAPI("https://localhost:44373", _httpClient);
 
+            // fetch the data
             var gadgets = await gadgetAPI.GetGadgetsAsync();
 
+            // use Automapper to convert the list of GadgetWebAPI.Gadget objects to a list of AutomapperDataAccess.Models.Gadget objects
             return _mapper.Map<List<Gadget>>(gadgets);
         }
     }

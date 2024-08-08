@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AutomapperDemoModels
+namespace AutomapperDemo.Models
 {
     public class Widget
     {

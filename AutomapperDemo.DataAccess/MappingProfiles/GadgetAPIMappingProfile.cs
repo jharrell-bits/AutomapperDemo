@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using AutomapperDemoModels;
+using AutomapperDemo.Models;
 
-namespace AutomapperDemoDataAccess.MappingProfiles
+namespace AutomapperDemo.DataAccess.MappingProfiles
 {
     public class GadgetAPIMappingProfile : Profile
     {

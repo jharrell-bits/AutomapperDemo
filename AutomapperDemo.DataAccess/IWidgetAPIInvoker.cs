@@ -1,6 +1,6 @@
-﻿using AutomapperDemoModels;
+﻿using AutomapperDemo.Models;
 
-namespace AutomapperDemoDataAccess
+namespace AutomapperDemo.DataAccess
 {
     public interface IWidgetAPIInvoker
     {
