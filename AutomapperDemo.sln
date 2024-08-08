@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomapperDemo", "AutomapperDemo\AutomapperDemo.csproj", "{69477E8F-6F97-427C-8B7B-8ED3833914A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomapperDemo", "AutomapperDemo\AutomapperDemo.csproj", "{69477E8F-6F97-427C-8B7B-8ED3833914A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WidgetWebAPI", "WidgetWebAPI\WidgetWebAPI.csproj", "{B2CDEF71-B7AE-48E9-8733-81A1E5A77CAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WidgetWebAPI", "WidgetWebAPI\WidgetWebAPI.csproj", "{B2CDEF71-B7AE-48E9-8733-81A1E5A77CAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GadgetWebAPI", "GadgetWebAPI\GadgetWebAPI.csproj", "{C4EC5046-0E98-4258-87D8-60C76F1CAE60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GadgetWebAPI", "GadgetWebAPI\GadgetWebAPI.csproj", "{C4EC5046-0E98-4258-87D8-60C76F1CAE60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomapperDemoDataAccess", "AutomapperDemoDataAccess\AutomapperDemoDataAccess.csproj", "{4C1930D4-8E64-42A7-8B35-6455B60AAA22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomapperDemo.DataAccess", "AutomapperDemo.DataAccess\AutomapperDemo.DataAccess.csproj", "{4C1930D4-8E64-42A7-8B35-6455B60AAA22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomapperDemoModels", "AutomapperDemoModels\AutomapperDemoModels.csproj", "{70F9031F-5949-4239-AFF4-8C6614389703}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomapperDemo.Models", "AutomapperDemo.Models\AutomapperDemo.Models.csproj", "{70F9031F-5949-4239-AFF4-8C6614389703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

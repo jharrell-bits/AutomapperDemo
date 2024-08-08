@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutomapperDemoDataAccess\AutomapperDemoDataAccess.csproj" />
-    <ProjectReference Include="..\AutomapperDemoModels\AutomapperDemoModels.csproj" />
+    <ProjectReference Include="..\AutomapperDemo.DataAccess\AutomapperDemo.DataAccess.csproj" />
+    <ProjectReference Include="..\AutomapperDemo.Models\AutomapperDemo.Models.csproj" />
   </ItemGroup>
 
 </Project>

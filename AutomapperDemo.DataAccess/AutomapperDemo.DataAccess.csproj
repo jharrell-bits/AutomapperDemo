@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <OpenApiReference Include="GadgetWebAPI\GadgetWebAPI.json" CodeGenerator="NSwagCSharp" Namespace="AutomapperDemoDataAccess.GadgetWebAPI" ClassName="GadgetWebAPI" >
+    <OpenApiReference Include="GadgetWebAPI\GadgetWebAPI.json" CodeGenerator="NSwagCSharp" Namespace="AutomapperDemoDataAccess.GadgetWebAPI" ClassName="GadgetWebAPI">
 		<NSwagGenerateExceptionClasses>true</NSwagGenerateExceptionClasses>
 	</OpenApiReference>
-    <OpenApiReference Include="WidgetWebAPI\WidgetWebAPI.json" CodeGenerator="NSwagCSharp" Namespace="AutomapperDemoDataAccess.WidgetWebAPI" ClassName="WidgetWebAPI" >
+    <OpenApiReference Include="WidgetWebAPI\WidgetWebAPI.json" CodeGenerator="NSwagCSharp" Namespace="AutomapperDemoDataAccess.WidgetWebAPI" ClassName="WidgetWebAPI">
 		<NSwagGenerateExceptionClasses>true</NSwagGenerateExceptionClasses>
 	</OpenApiReference>
   </ItemGroup>
@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutomapperDemoModels\AutomapperDemoModels.csproj" />
+    <ProjectReference Include="..\AutomapperDemo.Models\AutomapperDemo.Models.csproj" />
   </ItemGroup>
 
 </Project>

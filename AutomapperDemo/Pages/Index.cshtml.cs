@@ -1,6 +1,5 @@
 using AutomapperDemoDataAccess;
 using AutomapperDemoModels;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace AutomapperDemo.Pages
